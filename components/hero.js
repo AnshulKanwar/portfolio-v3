@@ -4,7 +4,7 @@ import portrait from "../public/portrait.jpg";
 
 const Hero = () => {
   return (
-    <div className="min-h-[calc(100vh-5rem)] grid place-items-center">
+    <div className="min-h-[calc(100vh-7rem)] grid place-items-center">
       <div className="max-w-2xl flex justify-between gap-16">
         <div className="p-3 bg-zinc-200 rounded-lg grid place-items-center gap-4">
           <Image
@@ -23,13 +23,16 @@ const Hero = () => {
             Hello, <br /> I Am Anshul Kanwar
           </h1>
           <p className="mt-2">
-            I am a student pursuing <span className="underline">Computer Science</span> and I love to{" "}
+            I am a student pursuing{" "}
+            <span className="underline">Computer Science</span> and I love to{" "}
             <span className="underline">code</span>
           </p>
           <div className="mt-8 font-semibold">
-            <button className="px-5 py-2 rounded-md bg-cyan-600 hover:bg-cyan-700 text-white">
-              <Link href="#contact">Let&#39;s Talk</Link>
-            </button>
+            <Link href="#contact">
+              <button className="px-5 py-2 rounded-md bg-cyan-600 hover:bg-cyan-700 text-white">
+                Let&#39;s Talk
+              </button>
+            </Link>
           </div>
         </div>
       </div>

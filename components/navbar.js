@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <div className="m-8 text-slate-500">
+    <div className="pt-12 p-8 text-slate-500 backdrop-blur-lg bg-white/75 w-full fixed top-0 left-0 z-50">
       <div className="flex justify-evenly">
         <span className="hover:underline">
           <Link href="#about">About</Link>
