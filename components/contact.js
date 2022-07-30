@@ -7,6 +7,14 @@ import {
 } from "react-icons/tb";
 import Container from "./container";
 
+const Icon = ({ children }) => {
+  return (
+    <div className="p-2 md:p-6 lg:p-8 grid place-items-center bg-red-900 hover:bg-[#681619] rounded-md">
+      {children}
+    </div>
+  );
+};
+
 const Contact = () => {
   return (
     <Container name="Contact" fg="text-red-900" bg="bg-red-100">
@@ -16,45 +24,43 @@ const Contact = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div className="bg-red-900 hover:bg-[#681619] p-2 md:p-6 lg:p-8 rounded-md grid place-items-center">
+          <Icon>
             <TbBrandGithub />
-          </div>
+          </Icon>
         </a>
         <a
           href="mailto:anshulkanwar@icloud.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div className="bg-red-900 hover:bg-[#681619] p-2 md:p-6 lg:p-8 rounded-md grid place-items-center">
+          <Icon>
             <TbMail />
-          </div>
+          </Icon>
         </a>
         <a
           href="https://www.linkedin.com/in/anshul-kanwar/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div className="bg-red-900 hover:bg-[#681619] p-2 md:p-6 lg:p-8 rounded-md grid place-items-center">
-            <TbBrandLinkedin />
+          <div className="bg-red-900 hover:bg-[#681619] rounded-md">
+            <Icon>
+              <TbBrandLinkedin />
+            </Icon>
           </div>
         </a>
-        <a
-          href="#"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div className="bg-red-900 hover:bg-[#681619] p-2 md:p-6 lg:p-8 rounded-md grid place-items-center">
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <Icon>
             <TbBrandDiscord />
-          </div>
+          </Icon>
         </a>
         <a
           href="https://www.instagram.com/_0xanshul/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div className="bg-red-900 hover:bg-[#681619] p-2 md:p-6 lg:p-8 rounded-md grid place-items-center">
+          <Icon>
             <TbBrandInstagram />
-          </div>
+          </Icon>
         </a>
       </div>
     </Container>
