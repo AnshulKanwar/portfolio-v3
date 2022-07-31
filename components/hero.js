@@ -5,18 +5,18 @@ import portrait from "../public/portrait.jpg";
 const Hero = () => {
   return (
     <div className="min-h-[calc(100vh-7rem)] grid place-items-center">
-      <div className="max-w-2xl flex justify-between gap-16">
-        <div className="p-3 bg-zinc-200 rounded-lg grid place-items-center gap-4">
+      <div className="max-w-2xl flex justify-between gap-20">
+        <div className="p-2 bg-zinc-200 rounded-lg grid place-items-center gap-4">
           <Image
             src={portrait}
             alt=""
             className="rounded-md"
             layout="fixed"
-            width={200}
-            height={254}
+            width={230}
+            height={286}
             quality={100}
           />
-          <span className="w-full text-lg italic">&#34;This is me.&#34;</span>
+          <span className="w-full text-2xl italic font-['Sacramento']">Hello Friend...</span>
         </div>
         <div className="mt-14">
           <h1 className="text-4xl font-black italic">
@@ -29,7 +29,7 @@ const Hero = () => {
           </p>
           <div className="mt-8 font-semibold">
             <Link href="#contact">
-              <button className="px-5 py-2 rounded-md bg-cyan-600 hover:bg-cyan-700 text-white">
+              <button className="px-5 py-2 rounded-md bg-indigo-600 hover:bg-indigo-700 text-white">
                 Let&#39;s Talk
               </button>
             </Link>
