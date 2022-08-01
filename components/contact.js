@@ -9,7 +9,7 @@ import Container from "./container";
 
 const Icon = ({ children }) => {
   return (
-    <div className="p-2 md:p-6 lg:p-8 grid place-items-center bg-red-900 hover:bg-[#681619] rounded-md">
+    <div className="p-2 md:p-6 lg:p-8 grid place-items-center bg-blue-900 hover:bg-[#172B65] rounded-md">
       {children}
     </div>
   );
@@ -17,8 +17,8 @@ const Icon = ({ children }) => {
 
 const Contact = () => {
   return (
-    <Container name="Contact" fg="text-red-900" bg="bg-red-100">
-      <div className="rounded-md text-5xl text-red-100 grid grid-cols-5 place-items-center gap-16">
+    <Container name="Contact" fg="text-blue-900" bg="bg-blue-100">
+      <div className="rounded-md text-5xl text-blue-100 grid grid-cols-5 place-items-center gap-16">
         <a
           href="https://github.com/AnshulKanwar"
           target="_blank"
@@ -42,7 +42,7 @@ const Contact = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div className="bg-red-900 hover:bg-[#681619] rounded-md">
+          <div className="bg-blue-900 hover:bg-[#172B65] rounded-md">
             <Icon>
               <TbBrandLinkedin />
             </Icon>
