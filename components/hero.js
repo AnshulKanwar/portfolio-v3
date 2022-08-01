@@ -1,20 +1,24 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import portrait from "../public/portrait.jpg";
 
-const getColor = () => {
-  const colors = [
-    { bg: "bg-rose-100", fg: "text-rose-500" },
-    { bg: "bg-violet-100", fg: "text-violet-500" },
-    { bg: "bg-orange-100", fg: "text-orange-500" },
-    { bg: "bg-blue-100", fg: "text-blue-500" },
-  ];
-
-  const color = colors[Math.floor(Math.random() * colors.length)];
-  return `${color.bg} ${color.fg}`
-};
+const accents = [
+  { bg: "bg-rose-100", fg: "text-rose-500" },
+  { bg: "bg-violet-100", fg: "text-violet-500" },
+  { bg: "bg-orange-100", fg: "text-orange-500" },
+  { bg: "bg-blue-100", fg: "text-blue-500" },
+];
 
 const Hero = () => {
+  const [accent, setAccent] = useState("bg-blue-100 text-blue-500")
+
+  useEffect(() => {
+    const accent = accents[Math.floor(Math.random() * accents.length)];
+    const accentText = `${accent.bg} ${accent.fg}`;
+    setAccent(accentText)
+  }, []);
+
   return (
     <div className="min-h-[calc(100vh-7rem)] grid place-items-center">
       <div className="max-w-3xl flex justify-between gap-20">
@@ -34,7 +38,10 @@ const Hero = () => {
         </div>
         <div className="mt-14">
           <h1 className="text-4xl font-black leading-snug">
-            Hello, <br /> I Am <span className={`px-2 mx-1 py-.5 italic rounded-md ${getColor()}`}>Anshul Kanwar</span>
+            Hello, <br /> I Am{" "}
+            <span className={`px-2 mx-1 py-.5 italic rounded-md ${accent}`}>
+              Anshul Kanwar
+            </span>
           </h1>
           <p className="mt-2">
             I am a student pursuing{" "}
