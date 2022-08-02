@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <Layout>
       <Hero />
-      <div className="flex flex-col gap-8">
+      <div className="flex flex-col gap-2 justify-evenly">
         <About />
         <Skills />
         <Projects />

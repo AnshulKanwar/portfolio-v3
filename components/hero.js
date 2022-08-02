@@ -20,14 +20,14 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="min-h-[calc(100vh-7rem)] grid place-items-center">
-      <div className="max-w-3xl flex justify-between gap-20">
-        <div className="p-2 bg-zinc-200 rounded-lg grid place-items-center gap-4">
+    <div className="min-h-screen sm:min-h-[calc(100vh-7rem)] grid place-items-center">
+      <div className="max-w-3xl flex flex-col-reverse sm:flex-row justify-around items-center gap-20">
+        <div className="p-2 bg-zinc-200 rounded-lg grid place-items-center grid-cols-2 sm:grid-cols-1 gap-4">
           <Image
             src={portrait}
             alt=""
             className="rounded-md"
-            layout="fixed"
+            layout="intrinsic"
             width={230}
             height={286}
             quality={100}
@@ -36,8 +36,8 @@ const Hero = () => {
             Hello Friend...
           </span>
         </div>
-        <div className="mt-14">
-          <h1 className="text-4xl font-black leading-snug">
+        <div className="mt-8">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-black leading-snug">
             Hello, <br /> I Am{" "}
             <span className={`px-2 mx-1 py-.5 italic rounded-md ${accent}`}>
               Anshul Kanwar

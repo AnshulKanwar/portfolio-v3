@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <div>{children}</div>
+      <div className="mx-6 md:mx-20">{children}</div>
     </div>
   );
 };

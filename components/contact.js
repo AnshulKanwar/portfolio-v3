@@ -18,7 +18,7 @@ const Icon = ({ children }) => {
 const Contact = () => {
   return (
     <Container name="Contact" fg="text-blue-900" bg="bg-blue-100">
-      <div className="rounded-md text-5xl text-blue-100 grid grid-cols-5 place-items-center gap-16">
+      <div className="rounded-md text-5xl text-blue-100 grid grid-cols-3 sm:grid-cols-5 place-items-center gap-16">
         <a
           href="https://github.com/AnshulKanwar"
           target="_blank"
