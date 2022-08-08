@@ -39,7 +39,7 @@ const Hero = () => {
         <div className="mt-8">
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-black leading-snug">
             Hello, <br /> I Am{" "}
-            <span className={`px-2 mx-1 py-.5 italic rounded-md ${accent}`}>
+            <span className={`px-2 mx-1 italic rounded-md ${accent}`}>
               Anshul Kanwar
             </span>
           </h1>
