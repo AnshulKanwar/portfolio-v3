@@ -54,11 +54,11 @@ const Hero = () => {
                 Let&#39;s Talk
               </button>
             </Link>
-            <a href="/resume.pdf">
+            <Link href="/resume.pdf">
               <button className="px-5 py-2 rounded-md bg-indigo-600 hover:bg-indigo-700 text-white">
                 Resume 
               </button>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
