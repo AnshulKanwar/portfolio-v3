@@ -48,10 +48,15 @@ const Hero = () => {
             <span className="underline">Computer Science</span> and I love to{" "}
             <span className="underline">code</span>
           </p>
-          <div className="mt-8 font-semibold">
+          <div className="mt-8 font-semibold flex gap-4">
             <Link href="#contact">
               <button className="px-5 py-2 rounded-md bg-indigo-600 hover:bg-indigo-700 text-white">
                 Let&#39;s Talk
+              </button>
+            </Link>
+            <Link href="/resume.pdf">
+              <button className="px-5 py-2 rounded-md bg-indigo-600 hover:bg-indigo-700 text-white">
+                Resume 
               </button>
             </Link>
           </div>
