@@ -11,12 +11,12 @@ const accents = [
 ];
 
 const Hero = () => {
-  const [accent, setAccent] = useState("bg-blue-100 text-blue-500")
+  const [accent, setAccent] = useState("bg-blue-100 text-blue-500");
 
   useEffect(() => {
     const accent = accents[Math.floor(Math.random() * accents.length)];
     const accentText = `${accent.bg} ${accent.fg}`;
-    setAccent(accentText)
+    setAccent(accentText);
   }, []);
 
   return (
@@ -54,11 +54,11 @@ const Hero = () => {
                 Let&#39;s Talk
               </button>
             </Link>
-            <Link href="/resume.pdf">
+            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
               <button className="px-5 py-2 rounded-md bg-indigo-600 hover:bg-indigo-700 text-white">
-                Resume 
+                Resume
               </button>
-            </Link>
+            </a>
           </div>
         </div>
       </div>
