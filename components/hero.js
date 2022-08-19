@@ -54,7 +54,7 @@ const Hero = () => {
                 Let&#39;s Talk
               </button>
             </Link>
-            <Link href="resume.pdf" download target="_blank" rel="noopener noreferrer">
+            <Link href="./resume.pdf" download target="_blank" rel="noopener noreferrer">
               <button className="px-5 py-2 rounded-md bg-indigo-600 hover:bg-indigo-700 text-white">
                 Resume
               </button>
