@@ -1,5 +1,5 @@
 import Container from "./container";
-import Hobbies from "./hobbies";
+// import Hobbies from "./hobbies";
 
 const About = () => {
   return (
