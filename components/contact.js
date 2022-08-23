@@ -50,7 +50,7 @@ const Contact = () => {
         </a>
         <a className="group" href="#" target="_blank" rel="noopener noreferrer">
           <Icon>
-            <TbBrandDiscord />
+            <TbBrandDiscord title="KernalPanic#0739"/>
             <div className="hidden group-hover:block text-xs">KernalPanic#0739</div>
           </Icon>
         </a>
