@@ -29,7 +29,7 @@ const Contact = () => {
           </Icon>
         </a>
         <a
-          href="mailto:anshulkanwar@icloud.com"
+          href="mailto:me@anshulkanwar.tech"
           target="_blank"
           rel="noopener noreferrer"
         >
